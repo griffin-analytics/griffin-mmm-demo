@@ -50,7 +50,7 @@ Griffin MMM is a comprehensive, intelligent solution that enhances your capabili
    - No registration required.
 
 2. **Upgrading to Pro**:
-   - Contact us at info@griffinmmm.com to discuss your needs.
+   - Contact us at info@griffin-analytics.com to discuss your needs.
    - Upon agreement, we'll send an invoice for the annual subscription fee.
    - Once payment is received, we'll generate a unique GitHub access token for you (valid for 1 year).
    - Use this token to access and install the Pro version of Griffin MMM.
@@ -62,7 +62,7 @@ For detailed usage instructions, API references, and examples, please refer to o
 For any questions or issues:
 
 - Demo Version: Open an issue in this repository.
-- Pro Version: Contact our support team at support@griffinmmm.com
+- Pro Version: Contact our support team at info@griffin-analytics.com
 
 ## License
 The demo version of Griffin MMM is available under the MIT License. The Pro version is subject to a separate license agreement provided upon purchase.
