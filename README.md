@@ -4,7 +4,7 @@
 
 ----
 
-# Griffin MMM: Integrated Bayesian Marketing Intelligence (demo)
+# Griffin MMM: Integrated Bayesian Marketing Intelligence (demo coming soon)
 
 ## Elevate Your Marketing Strategy with Advanced Media Mix Modelling
 
