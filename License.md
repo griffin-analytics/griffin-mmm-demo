@@ -1,44 +1,48 @@
-# License
+# License for Griffin MMM Demo
 
-## Proprietary Software License
+Copyright (c) 2024- FixedPoint IO Ltd
 
-**Griffin Analytics and Griffin MMM software** (the "Software") is the proprietary property of **FIXEDPOINT IO LTD** ("Company"). All rights, title, and interest in and to the Software, including any associated intellectual property rights, are and shall remain the exclusive property of the Company.
+## Demo Software License
 
-### Ownership
-
-The Software, including any updates, enhancements, and derivatives, is owned by **FIXEDPOINT IO LTD**, a company incorporated and registered in England and Wales with company number **13288661**. The registered office of the Company is located at **20-22 Wenlock Road, London, England, N1 7GU**.
+This Griffin MMM Demo software ("Demo Software") is provided by FixedPoint IO Ltd ("Company") for demonstration purposes only. This Demo Software is a limited functionality version of the full Griffin MMM software.
 
 ### License Grant
 
-Subject to the terms and conditions of this License, the Company grants the Licensee a non-exclusive, non-transferable, revocable license to use the Software solely for internal business purposes. The Licensee shall not, without the prior written consent of the Company:
+Subject to the terms and conditions of this License, the Company grants you a limited, non-exclusive, non-transferable, and revocable license to use the Demo Software for evaluation and demonstration purposes only.
 
-- Copy, modify, or create derivative works based on the Software;
-- Distribute, sell, lease, sublicense, or otherwise transfer the Software to any third party;
-- Decompile, reverse engineer, disassemble, or otherwise attempt to derive the source code of the Software;
-- Use the Software for any purpose other than as expressly permitted by this License.
+### Restrictions
 
-### Termination
-
-The Company may terminate this License at any time if the Licensee fails to comply with any term or condition of this License. Upon termination, the Licensee must immediately cease using the Software and destroy all copies of the Software in their possession.
+You may not:
+- Use the Demo Software for any commercial or production purposes
+- Attempt to disable or circumvent any functionality limitations in the Demo Software
+- Distribute, sell, lease, rent, lend, or sublicense the Demo Software
+- Decompile, reverse engineer, disassemble, or otherwise attempt to derive the source code of the Demo Software
+- Remove, minimize, block, or modify any notices of the Company in the Demo Software
 
 ### No Warranty
 
-The Software is provided "as is" without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. The Company does not warrant that the Software will meet the Licensee's requirements or that the operation of the Software will be uninterrupted or error-free.
+THE DEMO SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THE COMPANY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
 
 ### Limitation of Liability
 
-In no event shall the Company be liable for any damages arising out of or in connection with the use or inability to use the Software, including but not limited to direct, indirect, incidental, special, or consequential damages.
+IN NO EVENT SHALL THE COMPANY BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE DEMO SOFTWARE.
+
+### Termination
+
+This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any of its terms.
+
+### Full Version
+
+For access to the full functionality version of Griffin MMM, please visit https://griffin-analytics.com or contact our sales team at sales@fixedpoint.io.
 
 ### Governing Law
 
-This License shall be governed by and construed in accordance with the laws of England and Wales, without regard to its conflict of law provisions. Any disputes arising under or in connection with this License shall be resolved in the courts of England and Wales.
+This license shall be governed by and construed in accordance with the laws of England and Wales.
 
 ## Third-Party Software Notice
 
-This Software incorporates code from the pymc-marketing project (https://github.com/pymc-labs/pymc-marketing/), which is licensed under the Apache License Version 2.0, January 2004. The full text of this license can be found at http://www.apache.org/licenses/LICENSE-2.0.
+This Demo Software may incorporate code from open-source projects. Respective license and copyright notices for such projects are included within the Demo Software's documentation or source code, where applicable.
 
-The Company acknowledges the use of this third-party software and expresses gratitude to its creators and contributors. The incorporation of this code does not imply endorsement by or association with the pymc-marketing project or its creators.
+For any questions regarding this license, please contact legal@fixedpoint.io.
 
-Any modifications made to the pymc-marketing code within this Software are the property of FIXEDPOINT IO LTD and are subject to the terms of this Proprietary Software License.
-
-Users of this Software are advised to review the Apache License Version 2.0 for any additional terms or conditions that may apply to the portions of code derived from pymc-marketing.
+By using this Demo Software, you acknowledge that you have read this License, understood it, and agree to be bound by its terms.
