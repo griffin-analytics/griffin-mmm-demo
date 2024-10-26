@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo.png" alt="Griffin Logo">
+  <img src="https://github.com/griffin-analytics/griffin-mmm-demo/raw/main/images/logo.png" alt="Griffin Logo">
 </p>
 
 ----
