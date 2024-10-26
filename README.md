@@ -33,7 +33,7 @@ Griffin MMM is a comprehensive, intelligent solution that enhances your capabili
 ### Demo Version
 
 - **Free to Use**: Experience the power of Griffin MMM at no cost.
-- **Limited to 3 Paid Media Channels**: Perfect for small businesses or those looking to test the waters of media mix modeling.
+- **Limited to 4 Paid Media Channels**: Perfect for small businesses or those looking to test the waters of media mix modeling.
 - **Full Feature Set**: Access to all core features of Griffin MMM.
 - **No Time Limit**: Use the demo version for as long as you need.
 
