@@ -121,8 +121,8 @@ After installation, you'll need to prepare your data and create a configuration 
 3. **Set up your project directory:** Your project directory should look like this:
 
 ```yaml
-project_directory/ <br>
-├── config.yaml <br>
-├── data.csv <br>
-└── results/
+project_directory/ 
+- config.yaml 
+-data.csv 
+- results/
 ```
