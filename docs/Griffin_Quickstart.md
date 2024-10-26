@@ -23,8 +23,6 @@ Griffin MMM offers a range of features tailored to meet the needs of technically
 - **Customizable Models**: Tailor the modeling approach to your specific business needs and data structures.
 - **Data-Driven Insights**: Transform complex data into actionable insights, enabling informed decision-making.
 - **Scalable Solutions**: Whether you're a small agency or a large corporation, Griffin MMM can adapt to your needs.
-- **Visualization Tools**: Powerful plotting functions to help you communicate results effectively to stakeholders.
-- **Flexible API**: A comprehensive API that allows for integration with your existing workflow and tools.
 
 ### Who Should Use This Guide
 
@@ -76,15 +74,17 @@ This version is ideal for agencies of all sizes and mid-size to large businesses
 
 Getting started with Griffin MMM is incredibly simple and user-friendly. We provide a Jupyter notebook that can be easily accessed and run through platforms like Google Colab or similar services.
 
-1. **Access the Notebook:** Upon subscription (Demo or Pro), you'll receive a link to the Griffin MMM Jupyter notebook.
+ **Access the Notebook:** Upon subscription (Demo or Pro), you'll receive a link to the Griffin MMM Jupyter notebook.
 
-2. **Open in Colab:** Click the link to open the notebook in Google Colab (or your preferred Jupyter notebook platform).
+ **Open in Colab:** Click the link to open the notebook in Google Colab (or your preferred Jupyter notebook platform).
 
-3. **Run the Notebook:** Follow the step-by-step instructions in the notebook. All necessary dependencies and code are included.
+ **Create a configuration file:** Create a file named `config.yaml` in your project directory
 
-4. **Upload Your Data:** When prompted, upload your CSV data file to the notebook environment.
+ **Run the Notebook:** Follow the step-by-step instructions in the notebook. All necessary dependencies and code are included.
 
-5. **Execute the Analysis:** Run each cell in the notebook to perform your Media Mix Modeling analysis.
+ **Upload Your Data:** When prompted, upload your CSV data file to the notebook environment.
+
+ **Execute the Analysis:** Run each cell in the notebook to perform your Media Mix Modeling analysis.
 
 That's it! No complex installation or setup is required. The notebook guides you through the entire process, from data input to result interpretation.
 
@@ -92,37 +92,4 @@ That's it! No complex installation or setup is required. The notebook guides you
 
 This streamlined approach allows you to focus on your analysis rather than technical setup. The notebook includes detailed explanations and visualizations at each step, making the MMM process accessible and insightful.
 
-### Basic Setup
 
-After installation, you'll need to prepare your data and create a configuration file:
-
-1. **Prepare your data:** Ensure your data is in a CSV format with columns for date, target variable, media channels (impressions and spend), and any additional features.
-
-2. **Create a configuration file:** Create a file named `config.yaml` in your project directory. Here's a basic template:
-
-   ```yaml
-   model_name: MMM
-   raw_data_granularity: weekly
-   train_test_ratio: 0.9
-   date_col: "date"
-   target_col: "sales"
-   media:
-     - display_name: "TV"
-       impressions_col: tv_impressions
-       spend_col: tv_spend
-     - display_name: "Radio"
-       impressions_col: radio_impressions
-       spend_col: radio_spend
-     - display_name: "Digital"
-       impressions_col: digital_impressions
-       spend_col: digital_spend
-```
-
-3. **Set up your project directory:** Your project directory should look like this:
-
-```yaml
-project_directory/ 
-- config.yaml 
--data.csv 
-- results/
-```
