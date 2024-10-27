@@ -59,11 +59,16 @@ Griffin MMM is a comprehensive, intelligent solution that enhances your capabili
 ## Documentation
 For detailed usage instructions, API references, and examples, please refer to our documentation.
 
-## Support
+# Support
 For any questions or issues:
 
-- Demo Version: Open an issue in this repository.
-- Pro Version: Contact our support team at info@griffin-analytics.com
+- **Demo Version**: Open an issue in this repository or visit our [Support Hub](https://support.griffin-analytics.com/).
+- **Pro Version**: Contact our support team at info@griffin-analytics.com or access our [Support Hub](https://support.griffin-analytics.com/).
 
 ## License
-The demo version of Griffin MMM is available under the MIT License. The Pro version is subject to a separate license agreement provided upon purchase.
+Both versions of Griffin MMM are governed by the **Griffin MMM End-User License Agreement (EULA)**.
+
+- **Demo Version**: Access to the demo version is provided under a limited, non-transferable license as outlined in our EULA. This version is intended for internal evaluation purposes and allows analysis of up to 4 media channels.
+- **Pro Version**: The Pro version is subject to a separate license agreement provided upon purchase. This version grants full feature access, including unlimited channel analysis, and is governed by the terms of the EULA.
+
+Please review the EULA for full terms and conditions before using the Software.
