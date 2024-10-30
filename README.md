@@ -44,6 +44,10 @@ Griffin MMM is a comprehensive, intelligent solution that enhances your capabili
 - **Advanced Features**: Access to additional tools and capabilities (details available upon request).
 - **Annual Subscription**: Flexible pricing to suit your business needs.
 
+## Beta Release Notice
+
+Griffin MMM is currently in beta until 31 March 2025. During this beta period, we are offering early access at a special rate. Please note that while the product has undergone rigorous testing and is stable enough to be sold, there is still a small likelihood of encountering minor bugs or issues. By joining us during this beta phase, you will benefit from a lower price before it likely increases after the official release, and you will have an opportunity to provide valuable feedback that will help shape the future development of Griffin MMM.
+
 ## How to Get Started
 
 1. **Demo Version**: 
