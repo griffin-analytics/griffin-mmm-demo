@@ -4,10 +4,10 @@
 
 ----
 
-# Griffin MMM: Integrated Bayesian Marketing Intelligence
-# (demo coming soon)
+# Griffin MMM: Integrated Bayesian Marketing Intelligence: Elevate Your Marketing Strategy with Advanced Media Mix Modelling
 
-## Elevate Your Marketing Strategy with Advanced Media Mix Modelling
+## (get in touch for a demo info@griffin-analytics.com)
+
 
 Welcome to Griffin MMM, your gateway to Integrated Bayesian Marketing Intelligence. Our software goes beyond traditional media mix modeling, offering a sophisticated suite of tools built on PyMC to optimize your marketing strategies and drive unprecedented ROI.
 
