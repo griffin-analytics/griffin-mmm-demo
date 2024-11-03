@@ -23,7 +23,7 @@ train_test_ratio: 0.9       # Training set size (0.8-1.0)
 # Core column definitions
 date_col: "date"           # Date column name
 target_col: "subscribers"  # Target variable
-target_type: "conversion"  # Target type: 'revenue' or 'conversion'
+target_type: "conversion"  # Target type: 'revenue' (ROI) or 'conversion' (CPA)
 
 # Optional columns to exclude
 ignore_cols:
