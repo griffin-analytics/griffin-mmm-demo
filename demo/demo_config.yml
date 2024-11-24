@@ -1,0 +1,180 @@
+################################
+# MMM options
+################################
+
+model_name: MMM
+
+data_rows:
+  total: 171
+  start_date: 2019-07-28
+  end_date: 2022-10-30  
+
+################################
+# Data handling options
+################################
+
+# Frequency of the input data (required)
+# Values: daily, weekly
+raw_data_granularity: weekly
+ 
+# Proportion of the dataset to use for training (in-sample), with the remainder
+# used for an out-of-sample test. Defaults to 90% train, 10% test.
+train_test_ratio: 1.0
+
+################################
+# Column definitions
+################################
+
+# Column names from the input to be ignored (optional).
+# All columns in the input data should be listed somewhere in this file,
+# so use this field when testing out which columns to include.
+ignore_cols:
+  - "price"
+  - "other_events"
+
+# Column name for the date index of each row (optional,
+# case-sensitive; defaults to lowercase "date").
+# Values in this column must be ISO 8601 format (YYYY-MM-DD).
+date_col: "date"
+
+# Column name for the target or output metric (e.g. number of leads, sales volume)
+# that we want to increase with marketing spend (required).
+target_col: "subscribers"
+target_type : "conversion" #revenue or conversion
+# "entitlements_existing_all"
+
+# Column names for "extra features", i.e. factors external to
+# marketing that influence the target metric (optional).
+extra_features_cols:
+  - "covid_index"
+  - "competitor_spend"
+  - "promo_events"
+
+extra_features_impact: {
+   "competitor_spend": "negative"
+}
+
+# Required: each block under "Media Channel" represents an advertising channel,
+# defined by a display name (used in charts), a column name for
+# impressions data, and a column name for cost data.
+
+media:
+  - display_name: "Media Channel 1"
+    impressions_col: media_imp_1
+    spend_col: media_cost_1
+
+  - display_name: "Media Channel 2"
+    impressions_col: media_imp_2
+    spend_col: media_cost_2
+
+  - display_name: "Media Channel 3"
+    impressions_col: media_imp_3
+    spend_col: media_cost_3
+
+  - display_name: "Media Channel 4"
+    impressions_col: media_imp_4
+    spend_col: media_cost_4
+ 
+    
+################################
+# Model parameters
+################################
+
+# These PyMC marketing options determine how many samples to take from the
+# Markov chain Monte Carlo process; higher values mean slower runtime.
+tune: 1000
+draws: 2000
+chains: 4
+ad_stock_max_lag: 8
+target_accept : 0.95 #default values is 0.95
+# Adding Prophet seasonality and holidays to the model
+prophet:
+  include_holidays: true
+  holiday_country: 'US'
+  yearly_seasonality: true
+  trend: true
+  weekly_seasonality: true
+
+
+# Fixed seed for MCMC process: set this if subsequent runs need to
+# have exactly the same results. 
+seed: 42
+
+# Custom priors
+#Adjust priors based on the media spend ?
+custom_sigma: False
+custom_priors:
+  intercept:
+    dist: LogNormal
+    kwargs:
+      mu: 0
+      sigma: 5
+  saturation_beta:
+    dist: HalfNormal
+    kwargs:
+      sigma: 2
+  adstock_alpha:
+    dist: Beta
+    kwargs:
+      alpha: 1
+      beta: 3
+  saturation_lam:
+    dist: Gamma
+    kwargs:
+      alpha: 3
+      beta: 1
+  likelihood:
+    dist: Normal
+    kwargs:
+      sigma:
+        dist: HalfNormal
+        kwargs:
+          sigma: 2
+  gamma_control:
+    dist: HalfNormal
+    kwargs:
+      sigma: 1
+  gamma_fourier:
+    dist: Laplace
+    kwargs:
+      mu: 0
+      b: 1
+
+###### Custom priors example
+# custom_priors:
+#   intercept:
+#     dist: LogNormal
+#     kwargs:
+#       mu: 0
+#       sigma: 2
+  # beta_channel: 
+  #   dist: LogNormal
+  #   kwargs: 
+  #       mu: [2, 1.5, 1,1,1,1.5]  # Different mean for each channel
+  #       sigma: [0.5, 0.8, 1.2,1,1,1] # Different mean for each channel
+#   alpha:
+#     dist: Beta
+#     kwargs:
+#       alpha: 1
+#       beta: 3
+#   lam:
+#     dist: Gamma
+#     kwargs:
+#       alpha: 3
+#       beta: 1
+#   likelihood:
+#     dist: Normal
+#     kwargs:
+#       sigma:
+#         dist: HalfNormal
+#         kwargs:
+#           sigma: 2
+#   gamma_control:
+#     dist: HalfNormal
+#     kwargs:
+#       sigma: 1
+#   gamma_fourier:
+#     dist: Laplace
+#     kwargs:
+#       mu: 0
+#       b: 1
