@@ -1,0 +1,17 @@
+Model: 20241124083602
+ELPD (Expected Log Pointwise Predictive Density): 188.9648
+Details:
+Computed from 12000 posterior samples and 171 observations log-likelihood matrix.
+
+         Estimate       SE
+elpd_loo   188.96    12.29
+p_loo       10.57        -
+------
+
+Pareto k diagnostic values:
+                         Count   Pct.
+(-Inf, 0.5]   (good)      169   98.8%
+ (0.5, 0.7]   (ok)          2    1.2%
+   (0.7, 1]   (bad)         0    0.0%
+   (1, Inf)   (very bad)    0    0.0%
+
