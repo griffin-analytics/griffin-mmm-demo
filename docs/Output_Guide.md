@@ -8,9 +8,9 @@ The model generates a set of outputs organized into the following categories:
 ### 1. Model Configuration Files
 ```
 📁 results/
-├── config.yaml           # Original configuration
-├── model_config.json    # Model parameters
-└── output.txt          # Runtime information
+├── config.yaml               # Original configuration
+├── model_config.json         # Model parameters
+└── output.txt                # Runtime information
 ```
 
 ### 2. Performance Analysis Files
@@ -18,10 +18,11 @@ The model generates a set of outputs organized into the following categories:
 #### Core Metrics
 ```
 📁 results/
-├── all_decomp.csv                    # Component breakdown
-├── media_performance_effect.csv      # Channel effects
-├── media_performance_roi.csv         # ROI analysis
-└── media_performance_cost_per_target.csv # Cost efficiency
+├── all_decomp.csv                                                     # Component breakdown
+├── media_performance_effect.csv                                       # Channel effects
+├── media_performance_roi.csv                                          # ROI analysis
+├── response_curves.csv                                                # Detailed channel response curve data
+└── media_performance_cost_per_target.csv                              # Cost efficiency
 ```
 
 ### 3. Visualization Outputs
@@ -30,20 +31,20 @@ The model generates a set of outputs organized into the following categories:
 ```
 📁 results/
 ├── Channel Performance/
-│   ├── media_contribution_mean.png    # Mean contributions
-│   ├── media_contribution_median.png  # Median contributions
-│   ├── media_contribution_share.png   # Share analysis
-│   ├── media_roi_mean.png            # Mean ROI
-│   ├── media_roi_median.png          # Median ROI
-│   └── roi_distribution.png          # ROI spread
+│   ├── media_contribution_mean.png                                    # Mean contributions
+│   ├── media_contribution_median.png                                  # Median contributions
+│   ├── media_contribution_share.png                                   # Share analysis
+│   ├── media_roi_mean.png                                             # Mean ROI
+│   ├── media_roi_median.png                                           # Median ROI
+│   └── roi_distribution.png                                           # ROI spread
 │
 ├── Response Analysis/
-│   ├── response_curves.png           # Channel responses
-│   └── channel_contribution_as_function_of_cost_share.png
+│   ├── response_curves.png                                           # Channel responses
+│   └── channel_contribution_as_function_of_cost_share.png            # Channel relative contribution
 │
 └── Time Series/
-    ├── weekly_media_contribution.png
-    └── weekly_media_and_baseline_contribution.png
+    ├── weekly_media_contribution.png                             # Media contribition over time
+    └── weekly_media_and_baseline_contribution.png                # Media and baseline contribition over time
 ```
 
 #### Model Diagnostics
@@ -54,9 +55,9 @@ The model generates a set of outputs organized into the following categories:
 │   └── model_fit_predictions.png    # Predictions
 │
 └── Model Analysis/
-    ├── components_contributions.png
-    ├── model_priors_and_posteriors.png
-    └── waterfall_plot_components_decomposition.png
+    ├── components_contributions.png                    # Components contribition
+    ├── model_priors_and_posteriors.png                 # Model priors
+    └── waterfall_plot_components_decomposition.png     # Waterfall chart of relative contributions
 ```
 
 ## Detailed File Descriptions
@@ -91,6 +92,37 @@ The model generates a set of outputs organized into the following categories:
    channel,mean_roi,median_roi,lower_95,upper_95
    channel_1,value,value,value,value
    ```
+
+3. **response_curves.csv**
+   - Detailed channel response curve data
+   ```csv
+   channel,x_spend,y_contribution,alpha,lambda
+   channel_1,spend_value,contribution_value,alpha_param,lambda_param
+   ```
+The `response_curves.csv` file contains data that describes the relationship between media spending and its effect on the outcome for each channel. Here's what each column means:
+
+1. `channel`: 
+   - The name/identifier of the marketing channel (e.g., TV, Radio, Social Media)
+
+2. `x_spend`: 
+   - The amount of money spent on the channel
+   - These are evenly spaced points along the spending range used to plot the response curve
+
+3. `y_contribution`: 
+   - The predicted contribution (response) for that level of spend
+   - Represents how much lift/effect you get from each spending level
+
+4. `alpha`: 
+   - The saturation parameter
+   - Represents the maximum potential contribution a channel can achieve
+   - A higher alpha means the channel has more potential impact
+
+5. `lambda`: 
+   - The shape parameter that controls how quickly the response saturates
+   - A higher lambda means the response curve reaches saturation more quickly
+   - A lower lambda means more gradual diminishing returns
+
+This data essentially maps out the full response curve for each channel, showing how spending (x_spend) translates into business outcomes (y_contribution), while alpha and lambda define the shape of that relationship.
 
 ### Visualization Guide
 
@@ -167,10 +199,10 @@ def analyze_fit():
 2. **Analysis Workflow**
    ```python
    # Recommended analysis sequence
-   1. Check model_fit_in_sample.png
-   2. Review media_performance_roi.csv
-   3. Analyze response_curves.png
-   4. Examine waterfall_plot
+   1. Check model fit, especially in sample
+   2. Review media performance roi/cpa
+   3. Analyze response curves
+   4. Examine contributions e.g. waterfall plot
    ```
 
 3. **Documentation**
