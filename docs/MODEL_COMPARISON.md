@@ -53,6 +53,7 @@ This guide compares leading Media Mix Modeling packages, highlighting their key 
    - Flexible framework
    - Strong statistical foundation
    - Active development community
+   - Requires additonal work to make operational
 
 3. **LightweightMMM**
    - JAX optimization
@@ -60,65 +61,14 @@ This guide compares leading Media Mix Modeling packages, highlighting their key 
    - Good for basic needs
 
 4. **Meta Robyn**
-   - Ridge regression approach
-   - Strong optimization features
-   - R-based implementation
+   - R-based Ridge regression approach with inherent inference limitations
+   - Regularization introduces systematic bias in coefficient estimates, compromising statistical inference
+   - While good for prediction, Ridge regression's shrinkage of coefficients makes ROI and effectiveness measurements less reliable
+   - Slow performance due to lack of multi-threading
 
-5. **Uber Orbit**
+5. **Uber's Orbit (Karpiu)**
    - Time-varying coefficients
-   - Strong Bayesian foundation
-   - Limited optimization tools
-
-## Selection Criteria
-
-Consider these factors when choosing an MMM solution:
-
-1. **Technical Requirements**
-   - Programming language preference
-   - Statistical methodology needs
-   - Computational resources
-
-2. **Business Needs**
-   - Budget optimization requirements
-   - Forecasting needs
-   - Implementation timeline
-
-3. **Team Capabilities**
-   - Statistical expertise
-   - Programming proficiency
-   - Available support resources
-
-## Implementation Guide
-
-For each solution:
-
-### Griffin MMM
-```python
-# Quick start example
-from griffin_mmm import MMMModel
-model = MMMModel()
-```
-
-### PyMC-Marketing
-```python
-# Quick start example
-from pymc_marketing import MarketingModel
-model = MarketingModel()
-```
-
-### LightweightMMM
-```python
-# Quick start example
-from lightweight_mmm import LightweightMMM
-model = LightweightMMM()
-```
-
-## Future Development
-
-- Griffin MMM: Adding time-varying parameters
-- PyMC-Marketing: Expanding forecasting capabilities
-- LightweightMMM: Enhancing optimization tools
-- Meta Robyn: Potential Python port
-- Uber Orbit: Adding budget optimization
+   - Strong Bayesian foundation but requires additonal work to make operational
+   - Lacks optimization tools
 
 This comparison reflects the state of MMM solutions as of 2024 and may be subject to updates.
