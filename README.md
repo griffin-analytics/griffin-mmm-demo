@@ -21,6 +21,17 @@ We've included everything you need to get started in the `/demo` folder:
 
 This demo package is designed to help you understand Griffin MMM's capabilities and get you up and running quickly with your own analyses.
 
+## Using Colab for the Demo
+
+We recommend running the demo notebook in Google Colab, as it provides a convenient and easy-to-use environment with the necessary Python libraries pre-installed. Colab also allows you to easily view and interact with the notebook without the need to set up a local development environment.
+
+To use the demo in Colab:
+
+1. Open the Griffin MMM Demo Notebook in Colab.
+2. Follow the instructions in the notebook to get started with the Griffin MMM demo.
+
+Using Colab ensures a seamless experience and allows you to focus on exploring the Griffin MMM features without any setup hassles.
+
 ## Why Choose Griffin MMM?
 
 Griffin MMM is a comprehensive, intelligent solution that enhances your capabilities for marketing analytics:
