@@ -10,8 +10,16 @@
 
 **Get in touch for a demo info@griffin-analytics.com**
 
-
 Welcome to Griffin MMM, your gateway to Integrated Bayesian Marketing Intelligence. Our software goes beyond traditional media mix modeling, offering a sophisticated suite of tools built on PyMC to optimize your marketing strategies and drive unprecedented ROI.
+
+## Demo Materials
+We've included everything you need to get started in the `/demo` folder:
+- A detailed Jupyter notebook walking through a complete MMM analysis
+- Sample datasets and configuration files
+- Helper scripts and utilities
+- Documentation of model parameters and outputs
+
+This demo package is designed to help you understand Griffin MMM's capabilities and get you up and running quickly with your own analyses.
 
 ## Why Choose Griffin MMM?
 
