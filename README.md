@@ -23,7 +23,7 @@ This demo package is designed to help you understand Griffin MMM's capabilities 
 
 ## Using Colab for the Demo
 
-We recommend running the demo notebook in Google Colab, as it provides a convenient and easy-to-use environment with the necessary Python libraries pre-installed. Colab also allows you to easily view and interact with the notebook without the need to set up a local development environment.
+We recommend running the demo notebook in Google Colab (https://colab.research.google.com), as it provides a convenient and easy-to-use environment with the necessary Python libraries pre-installed. Colab also allows you to easily view and interact with the notebook without the need to set up a local development environment.
 
 To use the demo in Colab:
 
