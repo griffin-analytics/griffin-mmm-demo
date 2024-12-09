@@ -1,5 +1,5 @@
 
-# Griffin MMM Results Guide
+# Results Guide
 
 ## Results Directory Structure
 
