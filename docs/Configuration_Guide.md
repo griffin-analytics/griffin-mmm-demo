@@ -1,7 +1,7 @@
-# Griffin MMM Configuration Guide
+# Configuration Guide
 
 ## Introduction
-The Griffin Media Mix Model requires a YAML configuration file to define model parameters and data specifications. This guide explains how to create and customize your configuration file.
+It is helpful to use a YAML configuration file to define model parameters and data specifications. This guide explains how to create and customize your configuration file.
 
 ## Core Configuration Components
 
