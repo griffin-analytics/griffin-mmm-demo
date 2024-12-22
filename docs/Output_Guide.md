@@ -13,13 +13,13 @@ The results are organised into three main categories: configuration files, perfo
 ### Directory Overview
 ```plaintext
 📁 results/
-├── config.yaml               # Original configuration
-├── model_config.json         # Model parameters
-├── all_decomp.csv            # Component breakdown
-├── media_performance_roi.csv # ROI analysis
-├── response_curves.csv       # Response curve data
-├── media_contribution_mean.png  # Mean contributions
-├── model_fit_in_sample.png   # Training fit
+├── config.yaml                                 # Original configuration
+├── model_config.json                           # Model parameters
+├── all_decomp.csv                              # Component breakdown
+├── media_performance_roi.csv                   # ROI analysis
+├── response_curves.csv                         # Response curve data
+├── media_contribution_mean.png                 # Mean contributions
+├── model_fit_in_sample.png                     # Training fit
 └── waterfall_plot_components_decomposition.png # Contribution decomposition
 ```
 
