@@ -24,8 +24,8 @@ Griffin MMM is a cutting-edge, production-ready solution designed to empower sma
 
 Griffin MMM is designed for a seamless experience in Google Colab. Here’s how to get started:
 
-1. **Open the Demo Notebook**:
-   [Click here to launch the notebook in Colab](https://colab.research.google.com).
+1. **Open the Demo Notebook in Colab**:
+   (https://colab.research.google.com)
 
 2. **Run the Setup Cell**:
    - Install required libraries with a single click.
