@@ -42,7 +42,6 @@ This section will guide you through the process of accessing and setting up Grif
 | Media Channels        | Up to 4           | Unlimited          |
 | Support               | Community         | Priority Support   |
 | Advanced Features     | Basic             | Full Access        |
-| Visualisations        | Standard          | Advanced           |
 | Strategy Consultation | Not Included      | Quarterly          |
 | Software Updates      | Limited           | Regular Updates    |
 
