@@ -96,7 +96,7 @@ target_accept: 0.95         # Target acceptance rate for proposals
 seed: 42                    # Random seed for reproducibility
 
 # Marketing parameters
-ad_stock_max_lag: 8         # Maximum lag for carryover effects
+ad_stock_max_lag: 8         # Maximum lag for carryover effects, up to 12
 ```
 **Tips:**
 - Use at least 4 chains to ensure robust convergence checks.
