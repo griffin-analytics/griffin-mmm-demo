@@ -56,19 +56,18 @@ This guide compares leading Media Mix Modeling packages, highlighting their key 
    - Requires additonal work to make operational
 
 3. **LightweightMMM**
-   - JAX optimization
    - Efficient implementation
    - Good for basic needs
 
 4. **Meta Robyn**
    - R-based Ridge regression approach with inherent inference limitations
-   - Regularization introduces systematic bias in coefficient estimates, compromising statistical inference
-   - While good for prediction, Ridge regression's shrinkage of coefficients makes ROI and effectiveness measurements less reliable
-   - Slow performance due to lack of multi-threading
+   - Regularization introduces systematic bias in coefficient estimates, compromising statistical inference. Constrained regression amplifies this bias.
+   - While good for y_hat-type problems (i.e. prediction), Ridge regression's aggressive shrinkage of coefficients (i.e. beta_hat) makes ROI and effectiveness measurements less reliable
+   - Slow performance due to lack of multi-threading in R
 
 5. **Uber's Orbit (Karpiu)**
-   - Time-varying coefficients
-   - Strong Bayesian foundation but requires additonal work to make operational
+   - Time-varying coefficients in a predictive model
+   - Interesting Bayesian foundation but requires additonal work to make generalisable and operational
    - Lacks optimization tools
 
 This comparison reflects the state of MMM solutions as of 2024 and may be subject to updates.
