@@ -67,7 +67,7 @@ Griffin MMM is currently in beta until **31 March 2025**. During this beta perio
 
 - Lock in a discounted rate before the official release.
 - Gain the opportunity to provide feedback and shape the future of Griffin MMM.
-- Access a stable, rigorously tested solution with cutting-edge features.
+- Access a stable, rigourously tested solution with cutting-edge features.
 
 ---
 
