@@ -12,7 +12,7 @@ This guide compares leading Media Mix Modeling packages, highlighting their key 
 | Core Language              | Python                    | Python                 | Python               | R                   | Python            |
 | Statistical Framework      | Bayesian                  | Bayesian               | Bayesian             | Machine Learning    | Bayesian          |
 | Backend Engine            | PyMC                      | PyMC                   | NumPyro/JAX          | GlmNet              | STAN/Pyro         |
-| Inference Method          | MCMC                      | MCMC                   | MCMC                 | Ridge Regression    | MCMC              |
+| Inference Method          | MCMC                      | MCMC                   | MCMC                 | Constrained Ridge Regression    | MCMC              |
 
 ### Advanced Capabilities
 
@@ -38,7 +38,7 @@ This guide compares leading Media Mix Modeling packages, highlighting their key 
 |----------------------------|---------------------------|------------------------|----------------------|---------------------|-------------------|
 | Business Model            | Hybrid                    | Open Source            | Open Source          | Open Source         | Open Source       |
 | Implementation Type       | Packaged Solution         | DIY Framework          | DIY Framework        | DIY Framework       | DIY Framework     |
-| Community Support         | Mixed                     | Strong                 | Growing              | Large               | Moderate          |
+| Community Support         | Mixed                     | Active                 | Growing              | Large               | Moderate          |
 
 ## Detailed Feature Analysis
 
