@@ -1,99 +1,109 @@
+# Griffin MMM: Integrated Bayesian Marketing Intelligence
+
 <p align="center">
   <img src="images/logo.png" alt="Griffin Logo">
 </p>
 
-----
+---
 
-# Griffin MMM: Integrated Bayesian Marketing Intelligence
+## Unlock the Potential of Bayesian Media Mix Modelling
 
-## Elevate Your Marketing Strategy with Advanced Media Mix Modelling
+Griffin MMM is a cutting-edge, production-ready solution designed to empower small marketing agencies and data-savvy marketers. Built on an enhanced PyMC framework, Griffin MMM delivers unparalleled insights into your marketing strategy, enabling you to:
 
-**Get in touch for a personal demo info@griffin-analytics.com**
+- **Accurately Measure ROI**: Gain a clear understanding of channel performance with robust Bayesian inference.
+- **Optimize Budget Allocation**: Leverage advanced algorithms to maximize marketing effectiveness.
+- **Drive Confident Decisions**: Benefit from interpretable and reliable insights, even with limited data.
 
-Welcome to Griffin MMM, your gateway to Integrated Bayesian Marketing Intelligence. Our software goes beyond traditional media mix modeling, offering a sophisticated suite of tools built on PyMC to optimize your marketing strategies and drive unprecedented ROI.
+**Contact us today for a personal walkthrough:** info@griffin-analytics.com
 
-## Demo Materials
-We've included everything you need to get started in the `/demo` folder:
-- A detailed Jupyter notebook walking through a complete MMM analysis
-- Sample datasets and configuration files
-- Helper scripts and utilities
-- Documentation of model parameters and outputs
+---
 
-This demo package is designed to help you understand Griffin MMM's capabilities and get you up and running quickly with your own analyses.
+## Quick Start Guide
 
-## How To Run The Demo
+### Step 1: Run the Demo in Google Colab
 
-We recommend running the demo notebook in Google Colab (https://colab.research.google.com), as it provides a convenient and easy-to-use environment with the necessary Python libraries pre-installed. Colab also allows you to easily view and interact with the notebook without the need to set up a local development environment.
+Griffin MMM is designed for a seamless experience in Google Colab. Here’s how to get started:
 
-To use the demo in Colab:
+1. **Open the Demo Notebook**:
+   [Click here to launch the notebook in Colab](https://colab.research.google.com).
 
-1. Open the Griffin MMM Demo Notebook in Colab.
-2. Follow the instructions in the notebook to get started with the Griffin MMM demo.
+2. **Run the Setup Cell**:
+   - Install required libraries with a single click.
+   - Load the sample configuration and datasets included in the `/demo` folder.
 
-Using Colab ensures a seamless experience and allows you to focus on exploring the Griffin MMM features without any setup hassles.
+3. **Explore Griffin MMM’s Features**:
+   - Visualize key metrics, such as ROI and channel contributions.
+   - Run advanced budget optimization scenarios.
+
+4. **Need Help?** Raise an issue on [GitHub](https://github.com/griffin-analytics) or email us at info@griffin-analytics.com.
+
+---
 
 ## Why Choose Griffin MMM?
 
-Griffin MMM is a comprehensive, intelligent solution that enhances your capabilities for marketing analytics:
+| Feature                     | Griffin MMM Highlights |
+|-----------------------------|-------------------------|
+| **Accurate Insights**       | Powered by Bayesian inference for stable and interpretable results. |
+| **Seamless Integration**    | Merge and analyze data from multiple marketing channels effortlessly. |
+| **Advanced Visualizations** | Transform complex data into clear, actionable insights. |
+| **Customizable Models**     | Tailor models to your unique marketing ecosystem and goals. |
 
-- **Integrated Intelligence**: Seamlessly combines Bayesian methods with cutting-edge marketing insights.
-- **Enhanced PyMC Framework**: Builds upon PyMC's robust statistical foundation, tailored specifically for marketing applications.
-- **Precision Optimization**: Leverages advanced algorithms for accurate predictions and strategy refinement.
+---
 
-## Key Features
+## Demo vs Pro Comparison
 
-- **Smart Data Integration**: Effortlessly merge and analyze data from multiple marketing channels.
-- **Bayesian-Powered Analytics**: Utilize state-of-the-art Bayesian methods for more accurate and interpretable results.
-- **Intuitive Interface**: User-friendly design accessible to both marketing professionals and data scientists.
-- **Flexible Modeling**: Customize models to align with your unique marketing ecosystem and goals.
-- **Real-Time Insights**: Generate instant, actionable insights to drive agile marketing decisions.
-- **Advanced Visualization**: Transform complex data into clear, compelling visual narratives.
+| Feature                     | Demo Version                 | Pro Version                  |
+|-----------------------------|------------------------------|------------------------------|
+| **Price**                   | Free                         | Annual subscription          |
+| **Media Channels**          | 4                            | Unlimited                    |
+| **Features**                | Full access                  | Advanced tools and insights  |
+| **Support**                 | Community (GitHub issues, email) | Priority                     |
 
-## Demo vs Pro Version
-
-### Demo Version
-
-- **Free to Use**: Experience the power of Griffin MMM at no cost.
-- **Limited to 4 Paid Media Channels**: Perfect for small businesses or those looking to test the waters of media mix modeling.
-- **Full Feature Set**: Access to all core features of Griffin MMM.
-- **No Time Limit**: Use the demo version for as long as you need.
-
-### Pro Version
-
-- **Unlimited Media Channels**: Analyze and optimize across all your marketing channels.
-- **Priority Support**: Get expert assistance when you need it.
-- **Advanced Features**: Access to additional tools and capabilities (details available upon request).
-- **Annual Subscription**: Flexible pricing to suit your business needs.
+---
 
 ## Beta Release Notice
 
-Griffin MMM is currently in beta until 31 March 2025. During this beta period, we are offering early access at a special rate. Please note that while the product has undergone rigorous testing and is stable enough to be sold, there is still a small likelihood of encountering minor bugs or issues. By joining us during this beta phase, you will benefit from a lower price before it likely increases after the official release, and you will have an opportunity to provide valuable feedback that will help shape the future development of Griffin MMM.
+Griffin MMM is currently in beta until **31 March 2025**. During this beta period, we are offering early access at a special rate. By joining now, you will:
+
+- Lock in a discounted rate before the official release.
+- Gain the opportunity to provide feedback and shape the future of Griffin MMM.
+- Access a stable, rigorously tested solution with cutting-edge features.
+
+---
 
 ## How to Get Started
 
-1. **Demo Version**: 
-   - Clone this repository to get started with the demo version immediately.
-   - No registration required.
+### Demo Version:
+1. Clone this repository to access the demo.
+2. Follow the Quick Start Guide above to run the demo in Colab.
+3. Use the demo version for as long as you need – no registration required.
 
-2. **Upgrading to Pro**:
-   - Contact us at info@griffin-analytics.com to discuss your needs.
-   - Upon agreement, we'll send an invoice for the annual subscription fee.
-   - Once payment is received, we'll generate a unique GitHub access token for you (valid for 1 year).
-   - Use this token to access and install the Pro version of Griffin MMM.
+### Pro Version:
+1. Contact us at info@griffin-analytics.com to discuss your needs.
+2. Receive an invoice for the annual subscription fee.
+3. Upon payment, gain access to the Pro version, featuring:
+   - Unlimited channel analysis.
+   - Priority support and advanced tools.
 
-## Documentation
-For detailed usage instructions, API references, and examples, please refer to our documentation.
+---
 
-# Support
-For any questions or issues:
+## Documentation and Support
 
-- **Demo Version**: Open an issue in this repository or visit our [Support Hub](https://support.griffin-analytics.com/).
-- **Pro Version**: Contact our support team at info@griffin-analytics.com or access our [Support Hub](https://support.griffin-analytics.com/).
+### Documentation
+For detailed setup instructions, API references, and advanced use cases, please refer to the full documentation included in this repository.
+
+### Support
+- **Issues**: Raise any questions or problems on [GitHub](https://github.com/griffin-analytics/issues).
+- **Email**: Contact us directly at info@griffin-analytics.com.
+
+---
 
 ## License
-Both versions of Griffin MMM are governed by the **Griffin MMM End-User License Agreement (EULA)**.
 
-- **Demo Version**: Access to the demo version is provided under a limited, non-transferable license as outlined in our EULA. This version is intended for internal evaluation purposes and allows analysis of up to 4 media channels.
-- **Pro Version**: The Pro version is subject to a separate license agreement provided upon purchase. This version grants full feature access, including unlimited channel analysis, and is governed by the terms of the EULA.
+Griffin MMM is governed by our **End-User License Agreement (EULA)**.
 
-Please review the EULA for full terms and conditions before using the Software.
+- **Demo Version**: Licensed for internal evaluation and analysis of up to 4 media channels.
+- **Pro Version**: Licensed for full feature access, subject to the terms of the EULA.
+
+Please review the EULA before using Griffin MMM.
+
