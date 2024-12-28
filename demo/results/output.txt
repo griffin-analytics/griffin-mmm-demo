@@ -1,2 +1,0 @@
-Config: demo_config.yml
-Input File: demo_data.xlsx
