@@ -5,6 +5,99 @@ import yaml
 
 desc_width = "120px"
 
+import ipywidgets as widgets
+from ipywidgets import HBox, VBox, Layout
+
+
+def update_yaml_preview(*args):
+    """Update the YAML preview whenever any widget changes"""
+    config = get_latest_config()
+    
+    # Convert to YAML and update preview
+    yaml_str = yaml.dump(
+        config,
+        sort_keys=False,
+        indent=3,
+        default_style='',  # Prevents adding quotes
+        allow_unicode=True
+    )
+    yaml_preview.value = yaml_str
+
+def create_column_selector(initial_cols=None, description=None):
+    if initial_cols is None:
+        initial_cols = []
+    
+    # Selected columns list
+    selected_cols = widgets.SelectMultiple(
+        options=initial_cols,
+        description=description,
+        allow_duplicates=False,
+        layout=Layout(height='100px'),
+        style={'description_width': desc_width}
+    )
+    selected_cols.observe(update_yaml_preview, 'value')
+    
+    # Text input for new column
+    new_col_input = widgets.Text(
+        placeholder='Enter column name',
+        layout=Layout(width='220px'),
+        style={'description_width': desc_width}
+    )
+    
+    # Add button
+    add_button = widgets.Button(
+        description='Add',
+        button_style='success',
+        layout=Layout(width='70px', margin='0 0 0 auto'),
+        disabled=True  # Initially disabled
+    )
+    
+    # Remove button
+    remove_button = widgets.Button(
+        description='Remove',
+        button_style='danger',
+        layout=Layout(width='70px', margin='0 0 0 auto'),
+        disabled=True  # Initially disabled
+    )
+    
+    def add_column(b):
+        if new_col_input.value:
+            new_options = list(selected_cols.options) + [new_col_input.value]
+            selected_cols.options = sorted(list(set(new_options)))
+            new_col_input.value = ''  # Clear input
+            add_button.disabled = True  # Disable after adding
+    
+    def remove_columns(b):
+        if selected_cols.value:  # If any columns are selected
+            new_options = [col for col in selected_cols.options if col not in selected_cols.value]
+            selected_cols.options = new_options
+            remove_button.disabled = True  # Disable after removing
+    
+    def on_selection_change(change):
+        remove_button.disabled = len(change['new']) == 0
+    
+    def on_input_change(change):
+        add_button.disabled = len(change['new']) == 0
+    
+    add_button.on_click(add_column)
+    remove_button.on_click(remove_columns)
+    selected_cols.observe(on_selection_change, names='value')
+    new_col_input.observe(on_input_change, names='value')
+    
+    # Layout
+    input_box = HBox([new_col_input, add_button])
+    widget = VBox([
+        selected_cols,
+        remove_button,
+        input_box
+    ])
+    
+    # Add method to get YAML format
+    def to_yaml_format():
+        return list(selected_cols.options)
+    
+    widget.to_yaml_format = to_yaml_format
+    return widget
 # Basic Settings
 model_name = widgets.Text(
     value='MMM',
@@ -49,11 +142,9 @@ train_test_ratio = widgets.FloatSlider(
 
 # Column Definitions
 
-# Create the TagsInput widget
-ignore_cols = widgets.TagsInput(
-    value=['price', 'other_events'],
-    description='Ignore Columns:',
-    style={'description_width': 'initial'}
+ignore_cols = create_column_selector(
+    initial_cols=['price', 'other_events'],
+    description='extra_features_cols:'
 )
 
 date_col = widgets.Text(
@@ -75,11 +166,9 @@ target_type = widgets.Dropdown(
     style={'description_width': desc_width}
 )
 
-extra_features = widgets.TagsInput(
-    value=['covid_index', 'competitor_spend', 'promo_events'],
-    description='Extra Features:',
-    allow_duplicates=False,
-    style={'description_width': 'initial'}
+extra_features = create_column_selector(
+    initial_cols=['covid_index', 'competitor_spend', 'promo_events'],
+    description='ignore_cols:'
 )
 
 # Media Channels
@@ -161,19 +250,17 @@ def get_latest_config():
         'model_name': model_name.value,
         'data_rows': {
             'total': total_rows.value,
-            # 'start_date': start_date.value,
-            # 'end_date': end_date.value
             'start_date': start_date.value,
             'end_date': end_date.value
         },
         'raw_data_granularity': raw_data_granularity.value,
         'train_test_ratio': train_test_ratio.value,
         '\n### Column Definitions': '\n',
-        'ignore_cols': list(ignore_cols.value),
+        'ignore_cols': list(ignore_cols.to_yaml_format()),
         'date_col': date_col.value,
         'target_col': target_col.value,
         'target_type': target_type.value,
-        'extra_features_cols': list(extra_features.value),
+        'extra_features_cols': list(extra_features.to_yaml_format()),
         'extra_features_impact': {
             'competitor_spend': 'negative'
         },
@@ -268,7 +355,7 @@ yaml.add_representer(datetime, datetime_representer)
 yaml_preview = widgets.Textarea(
     description='config.yml:',
     disabled=True,
-    layout=widgets.Layout(width='500px', height='1700px')
+    layout=widgets.Layout(width='500px', height='1800px')
 )
 
 # Save Button and Output
@@ -310,24 +397,10 @@ right_panel = widgets.VBox([
     yaml_preview,
     button_container
 ], layout=Layout(
-    # border='1px solid #ccc',
     padding='10px',
     margin='5px'
 ))
 
-def update_yaml_preview(*args):
-    """Update the YAML preview whenever any widget changes"""
-    config = get_latest_config()
-    
-    # Convert to YAML and update preview
-    yaml_str = yaml.dump(
-        config,
-        sort_keys=False,
-        indent=3,
-        default_style='',  # Prevents adding quotes
-        allow_unicode=True
-    )
-    yaml_preview.value = yaml_str
 
 # Create section headers
 basic_header = widgets.HTML(value='<h3 style="margin-top:20px">MMM Options</h3>')
@@ -349,9 +422,7 @@ left_panel = widgets.VBox([
     date_col, 
     target_col, 
     target_type,
-    widgets.Label('extra_features_cols:'),
     extra_features,
-    widgets.Label('ignore_cols: '),
     ignore_cols, 
     media_header,
     media_channels,
