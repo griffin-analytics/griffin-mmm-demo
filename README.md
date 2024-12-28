@@ -1,4 +1,4 @@
-# Griffin MMM: Integrated Bayesian Marketing Intelligence
+# Griffin MMM: Advanced Media Mix Modelling Workbench
 
 <p align="center">
   <img src="images/logo.png" alt="Griffin Logo">
