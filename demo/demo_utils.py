@@ -133,7 +133,7 @@ raw_data_granularity = widgets.Dropdown(
 
 train_test_ratio = widgets.FloatSlider(
     value=1.0,
-    min=0.1,
+    min=0.8,
     max=1.0,
     step=0.01,
     description='Train/Test Ratio:',
