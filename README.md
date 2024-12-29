@@ -80,12 +80,12 @@ Both files are designed to enhance your experience with Griffin MMM by streamlin
 
 ## Why Choose Griffin MMM?
 
-| Feature                     | Griffin MMM Highlights |
-|-----------------------------|-------------------------|
-| **Accurate Insights**       | Powered by Bayesian inference for stable and interpretable results. |
-| **Seamless Integration**    | Merge and analyze data from multiple marketing channels effortlessly. |
-| **Advanced Visualizations** | Transform complex data into clear, actionable insights. |
-| **Customizable Models**     | Tailor models to your unique marketing ecosystem and goals. |
+Griffin MMM empowers marketing agencies with cutting-edge capabilities:
+
+1. **Accurate and Reliable Insights**: Powered by Bayesian inference for stable, interpretable results, even with sparse or incomplete data.
+2. **Ease of Use**: Fully integrated with Google Colab for seamless setup and execution, with no advanced coding required.
+3. **Optimized for Agencies**: Designed specifically for small to medium agencies, Griffin MMM stands out by being production-ready and easy to implement, requiring minimal configuration compared to tools like PyMC-Marketing. In addition to standard features like adstock and saturation modelling, Griffin delivers a more robust and statistically sound framework, ensuring replicable, stable, and interpretable results.
+4. **Beyond The Limitations of Extant FOSS Solutions**: Griffin MMM provides more robust outputs and interpretable insights compared to open-source solutions like Meta's Robyn.
 
 ---
 
