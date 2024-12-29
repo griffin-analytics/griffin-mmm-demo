@@ -52,16 +52,27 @@ To use this file:
 2. Place it in the same directory level as the `sample_data` folder for seamless integration with Griffin MMM.
 
 ### `demo_utils.py`
-This utility file provides interactive widgets for configuring and generating the `config.yaml` file. It simplifies the process of setting up your model by allowing you to:
 
-- Select and modify input columns for your dataset.
-- Configure model parameters such as `tune`, `draws`, and `chains`.
-- Define media channels and specify their spend and impressions columns.
-- Set up seasonal and trend components using Prophet integration settings.
+The `demo_utils.py` file provides an interactive configuration widget that simplifies the process of setting up your `config.yaml` file for Griffin MMM. This widget allows users to edit and preview their model configuration in real-time, making it easier to customize and validate the setup.
 
-To use this file:
+#### Key Features:
+- **Live YAML Preview**: Changes made in the widget are instantly reflected in the YAML configuration file, ensuring transparency and reducing errors.
+- **Editable Model Options**: Modify essential parameters such as `Model Name`, `Date Range`, `Data Granularity`, and `Train/Test Ratio`.
+- **Column Management**: Add, remove, or rename input columns, including `Date Column`, `Target Column`, and `Extra Features`.
+- **Media Channel Definitions**: Easily define `spend_col` and `impressions_col` for each media channel.
+- **Custom Parameters**: Adjust model parameters like seasonal effects and trend components.
+
+#### How to Use:
 1. Download `demo_utils.py` from the repository.
-2. Import the file in your Jupyter Notebook to create interactive widgets for your configuration tasks.
+2. Place it in the same directory as your notebook.
+3. Import the file and display the widget by adding the following code snippet to your notebook:
+   ```python
+   from demo_utils import config_widget
+   display(config_widget)
+   ```
+4. Use the interactive interface to configure your model. The left panel allows for value editing, while the right panel provides a live preview of the corresponding YAML configuration file.
+
+This tool significantly streamlines the model configuration process, making it accessible even for users with minimal technical expertise.
 
 Both files are designed to enhance your experience with Griffin MMM by streamlining critical setup and optimization workflows. Be sure to explore their functionality and integrate them into your workflow for maximum efficiency.
 
