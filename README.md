@@ -17,25 +17,21 @@ Griffin MMM is a cutting-edge, production-ready solution designed to empower sma
 **Contact us today for a personal walkthrough:** info@griffin-analytics.com
 
 ---
-
 ## Quick Start Guide
 
-### Step 1: Run the Demo in Google Colab
+### 1. Open the Demo Notebook
+Once your data is ready, navigate to the /demo folder, and open the demo notebook in Google Colab (look for the .ipynb file).
 
-Griffin MMM is designed for a seamless experience in Google Colab. Here’s how to get started:
+### 2. Configure and Run
+* Install dependencies with one click in the Colab environment.
+* Use the preloaded sample data and demo configuration files (config.yaml) or load your own.
+* Explore features such as budget optimization, channel contribution analysis, and predictive insights.
 
-1. **Open the Demo Notebook in Colab**:
-   (https://colab.research.google.com)
+### 3. Visualize and Interpret
+* Review results to make data-driven decisions.
+* (Optional) Use PowerBI or similar for further visualisations as needed.
 
-2. **Run the Setup Cell**:
-   - Install required libraries with a single click.
-   - Load the sample configuration and datasets included in the `/demo` folder.
-
-3. **Explore Griffin MMM’s Features**:
-   - Visualize key metrics, such as ROI and channel contributions.
-   - Run advanced budget optimization scenarios.
-
-4. **Need Help?** Raise an issue on [GitHub](https://github.com/griffin-analytics) or email us at info@griffin-analytics.com.
+Need help? Contact us or raise a GitHub issue.
 
 ---
 ## User Instructions for Key Files
