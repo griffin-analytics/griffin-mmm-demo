@@ -34,6 +34,31 @@ Once your data is ready, navigate to the /demo folder, and open the demo noteboo
 Need help? Contact us or raise a GitHub issue.
 
 ---
+
+## Why Choose Griffin MMM?
+
+Griffin MMM empowers marketing agencies with advanced capabilities to optimize their marketing strategies:
+
+1. **Accurate and Reliable Insights**: Built on a Bayesian framework, Griffin MMM delivers stable and interpretable results, even when working with sparse or incomplete datasets. This ensures confidence in the outcomes and supports data-driven decision-making.
+
+2. **Seamless Ease of Use**: Fully integrated with Google Colab, Griffin MMM offers a hassle-free setup process that eliminates the need for extensive coding expertise. Its intuitive design ensures that users can quickly get started and focus on insights rather than technical challenges.
+
+3. **Tailored for Agencies**: Designed with small to medium agencies in mind, Griffin MMM is production-ready and requires minimal configuration compared to other tools like PyMC-Marketing. Its sound statistical framework ensures replicable, stable, and interpretable results, making it an ideal choice for agencies looking to deliver reliable outcomes to their clients.
+
+4. **A Step Beyond Open-Source Solutions**: Unlike open-source alternatives like Meta's Robyn, Griffin MMM provides a more robust and statistically rigorous approach. With Griffin, users benefit from enhanced stability, greater interpretability, and a production-ready tool that is better suited to real-world applications.
+
+---
+
+## Demo vs Pro Comparison
+
+| Feature                     | Demo Version                 | Pro Version                  |
+|-----------------------------|------------------------------|------------------------------|
+| **Price**                   | Free                         | Annual subscription          |
+| **Media Channels**          | 4                            | Unlimited                    |
+| **Features**                | Full access                  | Advanced tools and insights  |
+| **Support**                 | Community (GitHub issues, email) | Priority                     |
+
+---
 ## User Instructions for Key Files
 
 ### `budget_optimizer.py`
@@ -71,31 +96,6 @@ The `demo_utils.py` file provides an interactive configuration widget that simpl
 This tool significantly streamlines the model configuration process, making it accessible even for users with minimal technical expertise.
 
 Both files are designed to enhance your experience with Griffin MMM by streamlining critical setup and optimization workflows. Be sure to explore their functionality and integrate them into your workflow for maximum efficiency.
-
----
-
-## Why Choose Griffin MMM?
-
-Griffin MMM empowers marketing agencies with advanced capabilities to optimize their marketing strategies:
-
-1. **Accurate and Reliable Insights**: Built on a Bayesian framework, Griffin MMM delivers stable and interpretable results, even when working with sparse or incomplete datasets. This ensures confidence in the outcomes and supports data-driven decision-making.
-
-2. **Seamless Ease of Use**: Fully integrated with Google Colab, Griffin MMM offers a hassle-free setup process that eliminates the need for extensive coding expertise. Its intuitive design ensures that users can quickly get started and focus on insights rather than technical challenges.
-
-3. **Tailored for Agencies**: Designed with small to medium agencies in mind, Griffin MMM is production-ready and requires minimal configuration compared to other tools like PyMC-Marketing. Its sound statistical framework ensures replicable, stable, and interpretable results, making it an ideal choice for agencies looking to deliver reliable outcomes to their clients.
-
-4. **A Step Beyond Open-Source Solutions**: Unlike open-source alternatives like Meta's Robyn, Griffin MMM provides a more robust and statistically rigorous approach. With Griffin, users benefit from enhanced stability, greater interpretability, and a production-ready tool that is better suited to real-world applications.
-
----
-
-## Demo vs Pro Comparison
-
-| Feature                     | Demo Version                 | Pro Version                  |
-|-----------------------------|------------------------------|------------------------------|
-| **Price**                   | Free                         | Annual subscription          |
-| **Media Channels**          | 4                            | Unlimited                    |
-| **Features**                | Full access                  | Advanced tools and insights  |
-| **Support**                 | Community (GitHub issues, email) | Priority                     |
 
 ---
 
