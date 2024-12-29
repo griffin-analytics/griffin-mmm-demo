@@ -144,5 +144,5 @@ Griffin MMM is governed by our **End-User License Agreement (EULA)**.
 - **Demo Version**: Licensed for internal evaluation and analysis of up to 4 media channels.
 - **Pro Version**: Licensed for full feature access, subject to the terms of the EULA.
 
-Please review the EULA before using Griffin MMM.
+Please review the EULA before using Griffin MMM, see the LEGAL folder (https://github.com/griffin-analytics/griffin-mmm-demo/tree/main/LEGAL)
 
