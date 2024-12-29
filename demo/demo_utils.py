@@ -234,7 +234,7 @@ prophet_settings = widgets.VBox([
     widgets.Checkbox(value=True, description='Include Holidays'),
     widgets.Text(value='US', description='Holiday Country:', style={'description_width': desc_width }),
     widgets.Checkbox(value=True, description='Yearly Seasonality'),
-    widgets.Checkbox(value=True, description='Trend'),
+   # widgets.Checkbox(value=True, description='Trend'),
     widgets.Checkbox(value=True, description='Weekly Seasonality')
 ])
 
