@@ -128,20 +128,25 @@ Griffin MMM is currently in beta until **31 March 2025**. During this beta perio
 ## Documentation and Support
 
 ### Documentation
-For detailed setup instructions, API references, and advanced use cases, please refer to the full documentation included in this repository.
+Comprehensive setup instructions, API references, and use cases are included in the /docs folder.
 
 ### Support
-- **Issues**: Raise any questions or problems on [GitHub](https://github.com/griffin-analytics/issues).
-- **Email**: Contact us directly at info@griffin-analytics.com.
+* GitHub Issues: Raise problems or questions directly on the GitHub issue tracker.
+* Email: Contact us at info@griffin-analytics.com for personalized assistance.
 
----
+## License and Terms of Use
 
-## License
+Griffin MMM operates under two key legal agreements:
 
-Griffin MMM is governed by our **End-User License Agreement (EULA)** and **Subscription Agreement**.
+1. [Griffin Subscription Agreement](https://github.com/griffin-analytics/griffin-mmm-demo/blob/main/LEGAL/Griffin_Subscription_Agreement_v1.docx): This document outlines the subscription terms for Pro users, including pricing, usage rights, and support provisions.
 
-- **Demo Version**: Licensed for internal evaluation and analysis of up to 4 media channels.
-- **Pro Version**: Licensed for full feature access.
+2. [Griffin End-User License Agreement (EULA)](https://github.com/griffin-analytics/griffin-mmm-demo/blob/main/LEGAL/Griffin_EULA_v1.docx): This agreement governs the use of Griffin MMM for both demo and Pro versions. All users must review and accept the EULA before using the software.
 
-Please review the EULA and Subscription Agreement before using Griffin MMM, see the LEGAL folder (https://github.com/griffin-analytics/griffin-mmm-demo/tree/main/LEGAL)
+### Versions and Features:
+- **Demo Version**: Free to evaluate, with support for up to 4 media channels.
+  
+- **Pro Version**: Includes full feature access, unlimited media channels, and priority support.
+
+For detailed licensing terms, refer to the respective documents linked above or visit the `/docs/LEGAL` directory of the demo repository (https://github.com/griffin-analytics/griffin-mmm-demo/).
+
 
