@@ -38,6 +38,34 @@ Griffin MMM is designed for a seamless experience in Google Colab. Here’s how 
 4. **Need Help?** Raise an issue on [GitHub](https://github.com/griffin-analytics) or email us at info@griffin-analytics.com.
 
 ---
+## User Instructions for Key Files
+
+### `budget_optimizer.py`
+This module contains Griffin MMM's budget optimization code, providing essential functions to optimize marketing spend allocation across multiple channels. It enables users to:
+
+- Calculate expected contributions for each channel using advanced models such as the Michaelis-Menten and Sigmoid response functions.
+- Optimize budget distribution to maximize overall marketing impact while respecting budget constraints.
+- Perform scenario analysis to compare the current spending pattern with optimized allocations, empowering data-driven decision-making.
+
+To use this file:
+1. Download `budget_optimizer.py` from the repository.
+2. Place it in the same directory level as the `sample_data` folder for seamless integration with Griffin MMM.
+
+### `demo_utils.py`
+This utility file provides interactive widgets for configuring and generating the `config.yaml` file. It simplifies the process of setting up your model by allowing you to:
+
+- Select and modify input columns for your dataset.
+- Configure model parameters such as `tune`, `draws`, and `chains`.
+- Define media channels and specify their spend and impressions columns.
+- Set up seasonal and trend components using Prophet integration settings.
+
+To use this file:
+1. Download `demo_utils.py` from the repository.
+2. Import the file in your Jupyter Notebook to create interactive widgets for your configuration tasks.
+
+Both files are designed to enhance your experience with Griffin MMM by streamlining critical setup and optimization workflows. Be sure to explore their functionality and integrate them into your workflow for maximum efficiency.
+
+---
 
 ## Why Choose Griffin MMM?
 
