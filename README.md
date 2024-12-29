@@ -80,12 +80,15 @@ Both files are designed to enhance your experience with Griffin MMM by streamlin
 
 ## Why Choose Griffin MMM?
 
-Griffin MMM empowers marketing agencies with cutting-edge capabilities:
+Griffin MMM empowers marketing agencies with advanced capabilities to optimize their marketing strategies:
 
-1. **Accurate and Reliable Insights**: Powered by Bayesian inference for stable, interpretable results, even with sparse or incomplete data.
-2. **Ease of Use**: Fully integrated with Google Colab for seamless setup and execution, with no advanced coding required.
-3. **Optimized for Agencies**: Designed specifically for small to medium agencies, Griffin MMM stands out by being production-ready and easy to implement, requiring minimal configuration compared to tools like PyMC-Marketing. In addition to standard features like adstock and saturation modelling, Griffin delivers a more robust and statistically sound framework, ensuring replicable, stable, and interpretable results.
-4. **Beyond The Limitations of Extant FOSS Solutions**: Griffin MMM provides more robust outputs and interpretable insights compared to open-source solutions like Meta's Robyn.
+1. **Accurate and Reliable Insights**: Built on a Bayesian framework, Griffin MMM delivers stable and interpretable results, even when working with sparse or incomplete datasets. This ensures confidence in the outcomes and supports data-driven decision-making.
+
+2. **Seamless Ease of Use**: Fully integrated with Google Colab, Griffin MMM offers a hassle-free setup process that eliminates the need for extensive coding expertise. Its intuitive design ensures that users can quickly get started and focus on insights rather than technical challenges.
+
+3. **Tailored for Agencies**: Designed with small to medium agencies in mind, Griffin MMM is production-ready and requires minimal configuration compared to other tools like PyMC-Marketing. Its sound statistical framework ensures replicable, stable, and interpretable results, making it an ideal choice for agencies looking to deliver reliable outcomes to their clients.
+
+4. **A Step Beyond Open-Source Solutions**: Unlike open-source alternatives like Meta's Robyn, Griffin MMM provides a more robust and statistically rigorous approach. With Griffin, users benefit from enhanced stability, greater interpretability, and a production-ready tool that is better suited to real-world applications.
 
 ---
 
