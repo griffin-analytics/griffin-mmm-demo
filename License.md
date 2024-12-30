@@ -33,7 +33,7 @@ This license is effective until terminated. Your rights under this license will 
 
 ### Full Version
 
-For access to the full functionality version of Griffin MMM, please visit https://griffin-analytics.com or contact our sales team at either  info@griffin-analytics.com or sales@fixedpoint.io.
+For access to the full functionality version of Griffin MMM, please visit https://griffin-analytics.com or contact our sales team at info@griffin-analytics.com.
 
 ### Governing Law
 
