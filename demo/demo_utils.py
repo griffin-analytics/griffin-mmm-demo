@@ -234,8 +234,8 @@ prophet_settings = widgets.VBox([
     widgets.Checkbox(value=True, description='Include Holidays'),
     widgets.Text(value='US', description='Holiday Country:', style={'description_width': desc_width }),
     widgets.Checkbox(value=True, description='Yearly Seasonality'),
-    widgets.Checkbox(value=True, description='Weekly Seasonality'),
-    widgets.Checkbox(value=True, description='Trend')
+    widgets.Checkbox(value=True, description='Trend'),
+    widgets.Checkbox(value=True, description='Weekly Seasonality')
 ])
 
 seed = widgets.IntText(
@@ -283,8 +283,8 @@ def get_latest_config():
             'include_holidays': prophet_settings.children[0].value,
             'holiday_country': prophet_settings.children[1].value,
             'yearly_seasonality': prophet_settings.children[2].value,
-            'weekly_seasonality': prophet_settings.children[3].value,
-            'trend': prophet_settings.children[4].value
+            'trend': prophet_settings.children[3].value,
+            'weekly_seasonality': prophet_settings.children[4].value
         },
         'seed': seed.value,
         '\n### Custom priors': '\n',
