@@ -238,16 +238,13 @@ prophet_settings = widgets.VBox([
     widgets.Checkbox(value=True, description='Weekly Seasonality')
 ])
 
-seed = widgets.IntText(
-    value=42,
-    description='Random Seed:',
-    style={'description_width': desc_width }
-)
-
 def get_latest_config():
-    # Get the number of prophet settings widgets
-    prophet_settings_len = len(prophet_settings.children)
-    print(f"Number of prophet settings widgets: {prophet_settings_len}")
+    # Debug information about prophet settings
+    print("\nProphet Settings Debug Info:")
+    print(f"Number of prophet settings widgets: {len(prophet_settings.children)}")
+    print("Prophet settings children:")
+    for i, child in enumerate(prophet_settings.children):
+        print(f"  {i}: {type(child).__name__} - {child.description}")
     
     # Initialize prophet config with defaults
     prophet_config = {
@@ -258,23 +255,22 @@ def get_latest_config():
         'weekly_seasonality': True
     }
     
-    # Only try to access widgets that exist
+    # Try to get values from widgets if they exist
     try:
-        if prophet_settings_len > 0:
+        num_children = len(prophet_settings.children)
+        if num_children > 0:
             prophet_config['include_holidays'] = prophet_settings.children[0].value
-        if prophet_settings_len > 1:
+        if num_children > 1:
             prophet_config['holiday_country'] = prophet_settings.children[1].value
-        if prophet_settings_len > 2:
+        if num_children > 2:
             prophet_config['yearly_seasonality'] = prophet_settings.children[2].value
-        if prophet_settings_len > 3:
+        if num_children > 3:
             prophet_config['trend'] = prophet_settings.children[3].value
-        if prophet_settings_len > 4:
+        if num_children > 4:
             prophet_config['weekly_seasonality'] = prophet_settings.children[4].value
     except Exception as e:
-        print(f"Warning: Error accessing prophet settings: {e}")
-        print("Prophet settings structure:")
-        for i, child in enumerate(prophet_settings.children):
-            print(f"  {i}: {child.description}")
+        print(f"\nError accessing prophet settings: {str(e)}")
+        print("Using default values for missing settings")
     
     config = {
         '### MMM options': '\n',
@@ -369,6 +365,12 @@ def get_latest_config():
         }
     }
     return config
+
+seed = widgets.IntText(
+    value=42,
+    description='Random Seed:',
+    style={'description_width': desc_width }
+)
 
 # Custom YAML representer for datetime objects
 def datetime_representer(dumper, data):
