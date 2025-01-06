@@ -245,6 +245,12 @@ seed = widgets.IntText(
 )
 
 def get_latest_config():
+    # Add debugging for prophet settings
+    print("Prophet Settings Debug:")
+    print(f"Number of children in prophet_settings: {len(prophet_settings.children)}")
+    for i, child in enumerate(prophet_settings.children):
+        print(f"Child {i}: {type(child)} - {child.description if hasattr(child, 'description') else 'No description'}")
+    
     config = {
         '### MMM options': '\n',
         'model_name': model_name.value,
@@ -280,11 +286,11 @@ def get_latest_config():
         'target_accept': target_accept.value,
         '\n### Prophet seasonality settings': '\n',
         'prophet': {
-            'include_holidays': prophet_settings.children[0].value,
-            'holiday_country': prophet_settings.children[1].value,
-            'yearly_seasonality': prophet_settings.children[2].value,
-            'trend': prophet_settings.children[3].value,
-            'weekly_seasonality': prophet_settings.children[4].value
+            'include_holidays': prophet_settings.children[0].value if len(prophet_settings.children) > 0 else True,
+            'holiday_country': prophet_settings.children[1].value if len(prophet_settings.children) > 1 else 'US',
+            'yearly_seasonality': prophet_settings.children[2].value if len(prophet_settings.children) > 2 else True,
+            'trend': True,  # Default to True since widget is commented out
+            'weekly_seasonality': prophet_settings.children[3].value if len(prophet_settings.children) > 3 else True
         },
         'seed': seed.value,
         '\n### Custom priors': '\n',
