@@ -261,33 +261,28 @@ def get_latest_config():
         'weekly_seasonality': True
     }
     
+    # Debug information
+    num_children = len(prophet_settings.children)
+    print(f"\nNumber of prophet settings widgets: {num_children}")
+    print("Prophet settings children:")
+    for i, child in enumerate(prophet_settings.children):
+        print(f"  {i}: {type(child).__name__} - {getattr(child, 'description', 'No description')}")
+    
     # Safely get prophet settings values
     try:
-        children = prophet_settings.children
-        num_children = len(children)
-        
-        # Map widget indices to config keys
-        settings_map = {
-            0: ('include_holidays', True),
-            1: ('holiday_country', 'US'),
-            2: ('yearly_seasonality', True),
-            3: ('trend', True),
-            4: ('weekly_seasonality', True)
-        }
-        
-        # Update config with available widget values
-        for idx, (key, default) in settings_map.items():
-            if idx < num_children:
-                try:
-                    prophet_config[key] = children[idx].value
-                except Exception as e:
-                    print(f"Error getting value for {key} at index {idx}: {str(e)}")
-                    prophet_config[key] = default
-            else:
-                print(f"Warning: Missing widget for {key} at index {idx}, using default: {default}")
+        if num_children > 0:
+            prophet_config['include_holidays'] = prophet_settings.children[0].value
+        if num_children > 1:
+            prophet_config['holiday_country'] = prophet_settings.children[1].value
+        if num_children > 2:
+            prophet_config['yearly_seasonality'] = prophet_settings.children[2].value
+        if num_children > 3:
+            prophet_config['trend'] = prophet_settings.children[3].value
+        if num_children > 4:
+            prophet_config['weekly_seasonality'] = prophet_settings.children[4].value
     except Exception as e:
         print(f"Error accessing prophet settings: {str(e)}")
-        print("Using all default values for prophet settings")
+        print("Using default values for prophet settings")
     
     config = {
         '### MMM options': '\n',
