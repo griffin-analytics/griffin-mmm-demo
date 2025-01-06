@@ -272,7 +272,9 @@ def get_latest_config():
             prophet_config['weekly_seasonality'] = prophet_settings.children[4].value
     except Exception as e:
         print(f"Warning: Error accessing prophet settings: {e}")
-        # Keep using defaults if there's an error
+        print("Prophet settings structure:")
+        for i, child in enumerate(prophet_settings.children):
+            print(f"  {i}: {child.description}")
     
     config = {
         '### MMM options': '\n',
