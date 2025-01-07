@@ -3,7 +3,8 @@ name = "abc_mmm"
 version = "1.0.0"
 packages = [
     { include = "base_driver", from = "src" },
-    { include = "mmm", from = "src" }
+    { include = "mmm", from = "src" },
+    { include = "demo_utils", from = "src" }
 ]
 description = "Griffin is a unified platform for data scientists and marketers to easily train, evaluate, and interpret marketing mix models."
 authors = ["Griffin Developers <hello@griffin-analytics.com>"]

@@ -140,6 +140,17 @@ train_test_ratio = widgets.FloatSlider(
     style={'description_width': desc_width}
 )
 
+# Train/Test Ratio should be at least 0.8. If it goes below 0.8, normalize it back to 0.8
+def normalize_ratio(change):
+    # Map the [0, 1] range to [0.8, 1.0] range
+    if change['new'] is not None and change['new'] < 0.8:
+        actual_value = 0.8
+        train_test_ratio.unobserve(normalize_ratio, names='value')
+        train_test_ratio.value = actual_value
+        train_test_ratio.observe(normalize_ratio, names='value')
+
+train_test_ratio.observe(normalize_ratio, names='value')
+
 # Column Definitions
 
 ignore_cols = create_column_selector(
@@ -231,10 +242,10 @@ target_accept = widgets.FloatText(
 
 # Prophet Settings
 prophet_settings = widgets.VBox([
-    widgets.Checkbox(value=True, description='Include Holidays'),
+    widgets.Checkbox(value=True, description='Include Holidays', disabled=True),
     widgets.Text(value='US', description='Holiday Country:', style={'description_width': desc_width }),
     widgets.Checkbox(value=True, description='Yearly Seasonality'),
-    widgets.Checkbox(value=True, description='Trend'),
+    widgets.Checkbox(value=True, description='Trend', disabled=True),
     widgets.Checkbox(value=True, description='Weekly Seasonality')
 ])
 
