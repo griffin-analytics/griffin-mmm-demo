@@ -6,7 +6,7 @@
 
 ---
 
-![GitHub All Releases](https://img.shields.io/github/downloads/griffin-analytics/griffin-mmm-demo/total)
+![GitHub All Releases](https://img.shields.io/github/downloads/griffin-analytics/griffin-mmm-demo/)
 
 
 ## Unlock the Potential of Bayesian Media Mix Modelling
