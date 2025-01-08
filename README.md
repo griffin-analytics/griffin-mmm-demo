@@ -9,7 +9,6 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/griffin-analytics/griffin-mmm-demo)
 ![GitHub repo size](https://img.shields.io/github/repo-size/griffin-analytics/griffin-mmm-demo)
 ![GitHub top language](https://img.shields.io/github/languages/top/griffin-analytics/griffin-mmm-demo)
-![GitHub language count](https://img.shields.io/github/languages/count/griffin-analytics/griffin-mmm-demo)
 ![GitHub issues](https://img.shields.io/github/issues/griffin-analytics/griffin-mmm-demo)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/griffin-analytics/griffin-mmm-demo)
 ![GitHub last commit](https://img.shields.io/github/last-commit/griffin-analytics/griffin-mmm-demo)
