@@ -6,6 +6,9 @@
 
 ---
 
+![GitHub All Releases](https://img.shields.io/github/downloads/griffin-analytics/griffin-mmm-demo/total)
+
+
 ## Unlock the Potential of Bayesian Media Mix Modelling
 
 Griffin MMM is a cutting-edge, production-ready solution designed to empower small marketing agencies and data-savvy marketers. Built on an enhanced PyMC framework, Griffin MMM delivers unparalleled insights into your marketing strategy, enabling you to:
