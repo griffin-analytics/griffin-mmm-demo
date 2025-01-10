@@ -28,7 +28,7 @@ Griffin MMM is a cutting-edge, production-ready solution designed to empower sma
 ---
 ## Quick Start Guide
 
-> ⚠️ **IMPORTANT:** Python **3.10** is required
+> ⚠️ **IMPORTANT:** Linux OS and Python **3.10** is required. We recommend Gogle Colab.
 
 ### 1. Open the Demo Notebook
 Once your data is ready, navigate to the /demo folder, and open the demo notebook in Google Colab (look for the .ipynb file).
