@@ -11,8 +11,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/griffin-analytics/griffin-mmm-demo)
 ![GitHub issues](https://img.shields.io/github/issues/griffin-analytics/griffin-mmm-demo)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/griffin-analytics/griffin-mmm-demo)
-![GitHub Stars](https://img.shields.io/github/stars/griffin-analytics/griffin-mmm-demo)
-![GitHub Forks](https://img.shields.io/github/forks/griffin-analytics/griffin-mmm-demo)
+
+
 
 
 ## Unlock the Potential of Bayesian Media Mix Modelling
